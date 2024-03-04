@@ -1,7 +1,7 @@
 let audio = ""
 let previewUrl = ""
 const $playBtn = document.getElementById("play-btn");
-window.test = previewUrl
+
 export default class Render {
     static renderPlaylists(playlists, $playlists){
         for (let i = 0; i < 5; i++) {
@@ -10,7 +10,7 @@ export default class Render {
             playlistLink.textContent = playlist.name;
             playlistLink.id = "playlist"
             playlistLink.href = playlist.external_urls.spotify;
-            playlistLink.target = '_blank'; // Abrir o link em uma nova aba
+            playlistLink.target = '_blank';
     
             $playlists.appendChild(playlistLink);
         }
@@ -25,21 +25,21 @@ export default class Render {
             const album = await albums.items[i].album; 
             
             const card = document.createElement("a");
-            card.setAttribute("href", `http://127.0.0.1:5500/src/pages/music.html?id=${album.id}`);
-            card.setAttribute("id", `card`); // Criando um id único para cada card
+            card.setAttribute("href", `https://fir-fy.vercel.app/src/pages/music.html?id=${album.id}`);
+            card.setAttribute("id", `card`);
             
             const albumImage = document.createElement("img");
             albumImage.setAttribute("src", album.images[1].url);
             albumImage.setAttribute("alt", "");
-            albumImage.setAttribute("id", `albumImage`); // Criando um id único para cada imagem de álbum
-            
+            albumImage.setAttribute("id", `albumImage`); 
+
             const albumName = document.createElement("h1");
             albumName.textContent = album.name;
-            albumName.setAttribute("id", `albumName`); // Criando um id único para cada nome de álbum
+            albumName.setAttribute("id", `albumName`); 
             
             const albumSinger = document.createElement("h2");
             albumSinger.textContent = album.artists[0].name;
-            albumSinger.setAttribute("id", `albumSinger`); // Criando um id único para cada nome de artista
+            albumSinger.setAttribute("id", `albumSinger`); 
             
             card.appendChild(albumImage);
             card.appendChild(albumName);
