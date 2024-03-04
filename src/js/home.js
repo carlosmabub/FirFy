@@ -2,10 +2,6 @@ import SpotifyApi from "./SpotifyApi.js";
 import Render from "./render.js";
 export let playlists = ""
 
-const $userName = document.querySelector("#userName")
-const $playlists = document.querySelector("#playlists")
-const $userImage = document.querySelector("#userImage")
-const $container = document.querySelector("#container-main")
 
 document.addEventListener('DOMContentLoaded', async function() {
     let url = document.location.search.substring(1)
@@ -20,13 +16,18 @@ document.addEventListener('DOMContentLoaded', async function() {
     var albums = ""
     
     token = await SpotifyApi.getToken(code, grant_type, redirect_uri)
-    localStorage.setItem("token",token)
-   
+   console.log(token)
+
     user = await SpotifyApi.getUser(token)
    
     playlists = await SpotifyApi.getPlaylists(token)
     
     albums = await SpotifyApi.getAlbums(token)
+    
+    const $userName = document.querySelector("#userName")
+    const $playlists = document.querySelector("#playlists")
+    const $userImage = document.querySelector("#userImage")
+    const $container = document.querySelector("#container-main")
     
     
     Render.renderPlaylists(playlists, $playlists)
