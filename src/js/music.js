@@ -15,9 +15,8 @@ document.addEventListener('DOMContentLoaded', async function() {
     const $playBtn = document.getElementById("play-btn");
 
    
-    let albumTrack = await SpotifyApi.getTrack(token, id)
     let album = await SpotifyApi.getAlbum(token, id)
-    let track = await SpotifyApi.track(token, "7sl1Fm6NjiH8zcjOE107VO")
+    let albumTrack = await SpotifyApi.getTrack(token, id)
 
     Render.renderTrack(albumTrack, $containerMain)
     Render.playBtn ($playBtn)
