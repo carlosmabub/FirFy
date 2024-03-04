@@ -1,5 +1,5 @@
 import SpotifyApi from "./SpotifyApi.js";
-import Render from "./render.js";
+import Render from "./Render.js";
 
 document.addEventListener('DOMContentLoaded', async function() {
     let url = document.location.search.substring(1)
