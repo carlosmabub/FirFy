@@ -1,4 +1,4 @@
-let audio
+let audio = ""
 let previewUrl = ""
 const $playBtn = document.getElementById("play-btn");
 window.test = previewUrl
