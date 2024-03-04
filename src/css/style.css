@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+/* container geral */
+#container {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* container texto */
+#text {
+    background-color: #1ED760;
+    text-align: center;
+}
+
+/* texto */
+.text {
+    padding: 80px;
+    color: white;
+    font-size: 5em;
+    font-weight: 700;
+    text-align: left;
+}
+
+/* container login */
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+}
+
+/* logo */
+#logo {
+    width: 630px;
+    height: 300px;
+}
+
+/* button */
+#button {
+    height: 90px;
+    font-size: 30px;
+    font-weight: 800;
+    background-color: #1ED760;
+    width: 500px;
+    border-radius: 50px;
+    border: none;
+}

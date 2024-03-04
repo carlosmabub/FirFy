@@ -1,0 +1,272 @@
+/* Container Pai */
+#container {
+    display: flex;
+    flex-wrap: wrap;
+ 
+}
+
+/* _________________________________________________________________________________________________________ */
+/* Side-bar */
+#side-bar {
+    background-color: #020202;
+    height: 100%;
+    max-width: 253px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    padding: 10px;
+}
+
+/* Logo */
+.logo-side-bar {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    height: 70px;
+}
+
+/* Home/Search/Library */
+#hsl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: .5rem;
+}
+/* create/like/episodes */
+#cle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    gap: .5rem;
+}
+/* botão */
+#btn{
+    width: 100%;
+    background-color: #020202;
+    font-size: 1.2em;
+    font-weight: 500;
+    border-radius: 5px;
+    text-align: left;
+    border: none;
+}
+#btn:hover {
+    background-color: #202020;
+}
+/* icones do botão */
+.icons {
+    color: white;
+    margin-right: 20px;
+    margin-left: 2px;
+    font-size: 25px;
+}
+
+/* historico de playlists*/
+#playlists{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 40px;
+    margin-left: 15px;
+}
+/* cada playlist */
+#playlist {
+    color: white; 
+    text-decoration: none; 
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+/* _________________________________________________________________________________________________________ */
+
+
+#main {
+    background-image: linear-gradient(#202020, #020202);
+    height: auto;
+    min-height: 90vh;
+    width: calc(100vw - 253px);
+    margin-left: 253px;
+    padding-bottom: 100px;
+}
+
+#container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #202020;
+    margin: 10px;
+}
+
+#userName {
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: 50px;
+    padding: 50px;
+}
+
+#userImage {
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+    border-radius: 80px;    
+}
+
+#container-main {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 26px;
+    margin: 30px 10px;
+}
+#card {
+    background-color: #202020;
+    width: 240px;
+    height: 320px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+#albumImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 20px;
+}
+#albumName {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 800;
+
+}
+#albumSinger {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: white;
+    text-align: left;
+    margin: 20px;
+}
+
+
+/* _________________________________________________________________________________________________________ */
+#footer {
+    background-color: #202020;
+    padding: 20px;
+    height: 10%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
+
+/* display esquerda */
+#left {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 30px ;
+}
+/* imagem album */
+#msc-img {
+    width: 60px;
+    margin-right: 20px;
+}
+/* info musicas */
+#msc-info {
+    color: white;
+    margin-right: 20px;
+}
+/* nome da musica */
+#h1 {
+    padding-bottom: 10px;
+}
+/* nome cantor */
+#h2 {
+    font-weight: 300;
+}
+/* botão de curtida */
+#like-img {
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* controles */
+#control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 800px;
+}
+/* icones do controle */
+#controls {
+    display: flex;
+    justify-content: center;
+}
+/* imagens do controller */
+#controller-img {
+    color: white;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#play-img {
+    color: white;
+    font-size: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+/* div barra de progresso */
+#progress-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* barra de progressp */
+#bar {
+    width: 90%;
+    height: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* playtime */
+#h1-bar {
+    color: white;
+}
+
+#right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    gap: 0.8rem;
+}
+
+#controller-img-right {
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+
+}
