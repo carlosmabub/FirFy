@@ -1,5 +1,5 @@
 import SpotifyApi from "./SpotifyApi.js";
-import Render from "./render.js";
+import Render from "./Render.js";
 export let playlists = ""
 
 
@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     let url = document.location.search.substring(1)
     let params = new URLSearchParams(url)
     let code = params.get("code")
+    console.log(code)
     const redirect_uri = "https://fir-fy.vercel.app/src/pages/home.html"
     const grant_type = "authorization_code"
     
@@ -16,7 +17,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     var albums = ""
     
     token = await SpotifyApi.getToken(code, grant_type, redirect_uri)
-   console.log(token)
+    console.log(token)
 
     user = await SpotifyApi.getUser(token)
    

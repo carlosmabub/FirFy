@@ -39,7 +39,7 @@ export default class Render {
             
             const albumSinger = document.createElement("h2");
             albumSinger.textContent = album.artists[0].name;
-            albumSinger.setAttribute("id", `albumSinger`); 
+            albumSinger.setAttribute("id", `albumSinger`);
             
             card.appendChild(albumImage);
             card.appendChild(albumName);
