@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', async function() {
     let albumTrack = await SpotifyApi.getTrack(token, id)
 
     Render.renderTrack(albumTrack, $containerMain)
-    Render.playBtn ($playBtn)
 
     $albumImagem.src = album.images[1].url
     $albumName.innerHTML = album.name
