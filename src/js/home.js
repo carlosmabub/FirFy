@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     let url = document.location.search.substring(1)
     let params = new URLSearchParams(url)
     let code = params.get("code")
-    const redirect_uri = "http://127.0.0.1:5500/src/pages/home.html"
+    const redirect_uri = "https://fir-fy.vercel.app/src/pages/home.html"
     const grant_type = "authorization_code"
     
     let token = ""
