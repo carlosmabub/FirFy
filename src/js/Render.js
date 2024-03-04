@@ -1,6 +1,6 @@
-let audio = ""
-let previewUrl = ""
-const $playBtn = document.getElementById("play-btn");
+// let audio = ""
+// let previewUrl = ""
+// const $playBtn = document.getElementById("play-btn");
 
 export default class Render {
     static renderPlaylists(playlists, $playlists){
