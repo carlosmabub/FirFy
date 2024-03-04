@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     var albums = ""
     
     token = await SpotifyApi.getToken(code, grant_type, redirect_uri)
-    console.log(token)
+    localStorage.setItem("token", token)
 
     user = await SpotifyApi.getUser(token)
    
